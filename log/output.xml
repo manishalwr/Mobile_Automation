@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-25T14:40:46.852091" rpa="false" schemaversion="5">
+<suite id="s1" name="UseCase14 1 Demonstrate Sequential Approval" source="C:\Users\manis\PycharmProjects\pythonProject2\UseCase14_1_Demonstrate_Sequential_Approval.robot">
+<test id="s1-t1" name="Launch App Test_1" line="155">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-25T14:40:47.622795" elapsed="10.776733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-04-25T14:41:01.102515" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-04-25T14:40:58.399528" elapsed="2.702987"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-25T14:41:01.118076" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]'.</msg>
+<msg time="2024-04-25T14:41:01.326568" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-25T14:41:01.102515" elapsed="0.224053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-25T14:41:03.327363" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-25T14:41:01.326568" elapsed="2.000795"/>
+</kw>
+<status status="PASS" start="2024-04-25T14:40:47.618065" elapsed="15.709298"/>
+</test>
+<status status="PASS" start="2024-04-25T14:40:46.855110" elapsed="16.472253"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="UseCase14 1 Demonstrate Sequential Approval">UseCase14 1 Demonstrate Sequential Approval</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-25T14:40:47.614146" level="ERROR">Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\UseCase14_1_Demonstrate_Sequential_Approval.robot' on line 13: Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\Marruti_App_Warranty_Parts_Approval_Job_Card.robot' on line 14: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>

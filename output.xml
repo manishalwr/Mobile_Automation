@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-04T21:06:11.595567" rpa="false" schemaversion="5">
+<suite id="s1" name="UseCase08 Demonstrate JC Detail page" source="C:\Users\manis\PycharmProjects\pythonProject2\UseCase08_Demonstrate_JC_Detail_page.robot">
+<test id="s1-t1" name="Launch App Test" line="16">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Execution terminated by signal</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="Enter Username" line="22">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="Enter Password" line="27">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="Submit Credentials" line="31">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Handle Login Prompt_1" line="37">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="Warranty tab" line="50">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="Select warranty type MLG" line="57">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="Select date filter_1" line="61">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="Test number of hits_1" line="67">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="Select date filter_2" line="79">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="Test number of hits_2" line="87">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t12" name="Select date filter_3" line="98">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t13" name="Search the details" line="107">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t14" name="Verify the Job card page" line="111">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t15" name="Job card detail page" line="115">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t16" name="Go back" line="131">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t17" name="Select the CCP from JC detail page" line="137">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t18" name="Search the details for CCP" line="143">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t19" name="Job card detail page for CCP" line="148">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t20" name="USe deifferent user" line="165">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t21" name="Launch App Test_1" line="168">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t22" name="Enter Username_1" line="174">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t23" name="Enter Password_1" line="180">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t24" name="Submit Credentials_1" line="185">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t25" name="Handle Login Prompt_2" line="191">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t26" name="Warranty tab_1" line="203">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t27" name="Select warranty type EWR_1" line="209">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t28" name="Select date filter_4" line="213">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t29" name="Test number of hits_3" line="219">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t30" name="Select date filter_5" line="231">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t31" name="Test number of hits_4" line="239">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t32" name="Select date filter_6" line="253">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t33" name="Search the details_1" line="261">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t34" name="Job card detail page for EWR" line="265">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-05-04T21:06:12.466747" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2024-05-04T21:06:11.595567" elapsed="0.871180"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="34" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="34" skip="0" id="s1" name="UseCase08 Demonstrate JC Detail page">UseCase08 Demonstrate JC Detail page</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-04T21:06:12.441648" level="ERROR">Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\UseCase08_Demonstrate_JC_Detail_page.robot' on line 13: Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\UseCase09_Demonstrate_Vehicle_History.robot' on line 14: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
