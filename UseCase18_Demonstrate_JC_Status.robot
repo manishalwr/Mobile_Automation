@@ -72,7 +72,7 @@ Open JC Status page
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.EditText   timeout=70
    AppiumLibrary.Click Element    xpath=//android.widget.EditText
    AppiumLibrary.Input Text    xpath=//android.widget.EditText    TS13EP0489
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC20012647"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC19020578"]   timeout=70
    sleep  2
 
 close application

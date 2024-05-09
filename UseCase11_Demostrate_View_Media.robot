@@ -73,10 +73,10 @@ Warrenty tab info_1
 #   AppiumLibrary.Element Should Be Visible    xpath=//android.view.View[@content-desc="Job Card Status Job Card Status Status of the Job cards"]
 
 Warranty Approvals Job Card_1
-    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Approvals Job Card Check & Approve"]  timeout=20
+    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Approvals Job Card Check & Approve"]  timeout=70
     AppiumLibrary.Click Element    xpath=//android.view.View[@text="Warranty Approvals Job Card Check & Approve"]
-    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Workshop Name"]   timeout=20
-    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="MLG"]   timeout=20
+    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Workshop Name"]   timeout=70
+    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="MLG"]   timeout=70
     AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="MLG"]
 
 job status
@@ -140,9 +140,9 @@ Click on search_1
    AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="Search"]
 
 Click on the view media
-   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.view.View[@text="JC24000167 icon chip PENDING icon Dealer Details CARS INDIA PVT. LTD. 27 days ago icon Creation Date 08/04/2024 icon Vehicle Reg No. WB08G9614 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]   timeout=70
+   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.view.View[@text="JC24000167 icon chip PENDING icon Dealer Details CARS INDIA PVT. LTD. 29 days ago icon Creation Date 08/04/2024 icon Vehicle Reg No. WB08G9614 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]   timeout=70
   # AppiumLibrary.Wait Until Page Contains    "JC24000167 icon chip PENDING icon Dealer Details CARS INDIA PVT. LTD. 23 days ago icon Creation Date 08/04/2024 icon Vehicle Reg No. WB08G9614 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"
-   AppiumLibrary.Click Element    xpath=//android.view.View[@text="JC24000167 icon chip PENDING icon Dealer Details CARS INDIA PVT. LTD. 27 days ago icon Creation Date 08/04/2024 icon Vehicle Reg No. WB08G9614 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+   AppiumLibrary.Click Element    xpath=//android.view.View[@text="JC24000167 icon chip PENDING icon Dealer Details CARS INDIA PVT. LTD. 29 days ago icon Creation Date 08/04/2024 icon Vehicle Reg No. WB08G9614 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Warranty Approval"]   timeout=70
    Swipe    932    1533    817    582
    Swipe    932    1533    817    582

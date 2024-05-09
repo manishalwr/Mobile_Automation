@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-04T21:06:11.595567" rpa="false" schemaversion="5">
-<suite id="s1" name="UseCase08 Demonstrate JC Detail page" source="C:\Users\manis\PycharmProjects\pythonProject2\UseCase08_Demonstrate_JC_Detail_page.robot">
-<test id="s1-t1" name="Launch App Test" line="16">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-09T13:12:21.053877" rpa="false" schemaversion="5">
+<suite id="s1" name="UseCase09 Demonstrate Vehicle History" source="C:\Users\manis\PycharmProjects\pythonProject2\UseCase09_Demonstrate_Vehicle_History.robot">
+<test id="s1-t1" name="Launch App Test" line="15">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
 <arg>app=${APP}</arg>
@@ -17,172 +17,1343 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Execution terminated by signal</status>
+<status status="PASS" start="2024-05-09T13:12:21.903220" elapsed="9.379573"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:32.953524" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
 <arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
 <arg>timeout=70</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-09T13:12:31.282793" elapsed="1.670731"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:32.953524" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]'.</msg>
+<msg time="2024-05-09T13:12:33.145035" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
 <arg>xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-09T13:12:32.953524" elapsed="0.191511"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:21.903220" elapsed="11.254325"/>
+</test>
+<test id="s1-t2" name="Enter Username" line="20">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:34.041988" level="INFO">xpath criteria: //android.widget.TextView[@text="User ID"]
+xpath criteria: //android.widget.TextView[@text="User ID"]</msg>
+<arg>xpath=//android.widget.TextView[@text="User ID"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:33.157545" elapsed="0.884443"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:34.046527" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.widget.EditText'.</msg>
+<msg time="2024-05-09T13:12:34.302195" level="INFO">xpath criteria: //android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.widget.EditText</msg>
+<arg>${LOGIN_USER_FIELD3}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:34.041988" elapsed="0.262815"/>
+</kw>
+<kw name="Input Text Into Current Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:34.307820" level="INFO">Typing text '214248' into current text field</msg>
+<arg>214248</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<status status="PASS" start="2024-05-09T13:12:34.304803" elapsed="0.184621"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>1</arg>
+<msg time="2024-05-09T13:12:38.492653" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-04T21:06:12.441648" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-09T13:12:34.492471" elapsed="4.000182"/>
 </kw>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Execution terminated by signal</status>
+<status status="PASS" start="2024-05-09T13:12:33.157545" elapsed="5.335108"/>
 </test>
-<test id="s1-t2" name="Enter Username" line="22">
+<test id="s1-t3" name="Enter Password" line="26">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:38.492653" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText'.</msg>
+<msg time="2024-05-09T13:12:38.781199" level="INFO">xpath criteria: //android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText</msg>
+<arg>xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:38.492653" elapsed="0.288546"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:38.783904" level="INFO">Typing text 'maruti123' into text field 'xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText'</msg>
+<msg time="2024-05-09T13:12:39.854833" level="INFO">xpath criteria: //android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText</msg>
+<arg>xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText</arg>
+<arg>maruti123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:38.781199" elapsed="1.073634"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:38.492653" elapsed="1.362180"/>
+</test>
+<test id="s1-t4" name="Submit Credentials" line="30">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:40.446961" level="INFO">xpath criteria: //android.widget.Button[@text="Login"]</msg>
+<arg>xpath=//android.widget.Button[@text="Login"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:39.868352" elapsed="0.578609"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:40.446961" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="Login"]'.</msg>
+<msg time="2024-05-09T13:12:40.813299" level="INFO">xpath criteria: //android.widget.Button[@text="Login"]</msg>
+<arg>xpath=//android.widget.Button[@text="Login"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:40.446961" elapsed="0.366338"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:39.854833" elapsed="0.958466"/>
+</test>
+<test id="s1-t5" name="Handle Login Prompt_1" line="35">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:41.888108" level="INFO">xpath criteria: //android.widget.TextView[@text="Multiples Login Detected"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Multiples Login Detected"]</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:40.813299" elapsed="1.074809"/>
+</kw>
+<msg time="2024-05-09T13:12:41.888108" level="INFO">${login_prompt_visible} = True</msg>
+<var>${login_prompt_visible}</var>
+<arg>AppiumLibrary.Element Should Be Visible</arg>
+<arg>xpath=//android.widget.TextView[@text="Multiples Login Detected"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:12:40.813299" elapsed="1.074809"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Handle Logout Prompt_1">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-09T13:12:41.888108" level="INFO">"Same user is logged in elsewhere. Please log out from other devices."</msg>
+<arg>"Same user is logged in elsewhere. Please log out from other devices."</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-09T13:12:41.888108" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:41.888108" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="Yes, Logout from other devices"]'.</msg>
+<msg time="2024-05-09T13:12:42.151346" level="INFO">xpath criteria: //android.widget.Button[@text="Yes, Logout from other devices"]</msg>
+<arg>xpath=//android.widget.Button[@text="Yes, Logout from other devices"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:41.888108" elapsed="0.263238"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-09T13:12:44.151910" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-09T13:12:42.151346" elapsed="2.000564"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:41.888108" elapsed="2.263802"/>
+</kw>
+<arg>${login_prompt_visible}</arg>
+<arg>Handle Logout Prompt_1</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>"No login prompt detected. Proceeding with login."</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:12:41.888108" elapsed="2.263802"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:40.813299" elapsed="3.338611"/>
+</test>
+<test id="s1-t6" name="Warranty tab" line="48">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:44.453302" level="INFO">xpath criteria: //android.view.View[@text="Warranty Warranty Parts Approval &amp; More"]</msg>
+<arg>xpath=//android.view.View[@text="Warranty Warranty Parts Approval &amp; More"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:44.151910" elapsed="0.301392"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:44.453302" level="INFO">Clicking element 'xpath=//android.view.View[@text="Warranty Warranty Parts Approval &amp; More"]'.</msg>
+<msg time="2024-05-09T13:12:45.360467" level="INFO">xpath criteria: //android.view.View[@text="Warranty Warranty Parts Approval &amp; More"]</msg>
+<arg>xpath=//android.view.View[@text="Warranty Warranty Parts Approval &amp; More"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:44.453302" elapsed="0.907165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:45.637948" level="INFO">xpath criteria: //android.view.View[@text="Warranty Approvals Job Card Check &amp; Approve"]</msg>
+<arg>xpath=//android.view.View[@text="Warranty Approvals Job Card Check &amp; Approve"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:45.360467" elapsed="0.277481"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:45.637948" level="INFO">Clicking element 'xpath=//android.view.View[@text="Warranty Approvals Job Card Check &amp; Approve"]'.</msg>
+<msg time="2024-05-09T13:12:45.966139" level="INFO">xpath criteria: //android.view.View[@text="Warranty Approvals Job Card Check &amp; Approve"]</msg>
+<arg>xpath=//android.view.View[@text="Warranty Approvals Job Card Check &amp; Approve"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:45.637948" elapsed="0.328191"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:44.151910" elapsed="1.814229"/>
+</test>
+<test id="s1-t7" name="Select warranty type MLG" line="54">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:46.240524" level="INFO">xpath criteria: //android.widget.TextView[@text="Warranty Approval Filter"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Warranty Approval Filter"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-09T13:12:45.966139" elapsed="0.274385"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:46.240524" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="MLG"]'.</msg>
+<msg time="2024-05-09T13:12:46.702467" level="INFO">xpath criteria: //android.widget.TextView[@text="MLG"]</msg>
+<arg>xpath=//android.widget.TextView[@text="MLG"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:46.240524" elapsed="0.461943"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:45.966139" elapsed="0.736328"/>
+</test>
+<test id="s1-t8" name="Select date filter_1" line="58">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:48.113597" level="INFO">xpath criteria: //android.widget.TextView[@text="Custom"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Custom"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:12:46.702467" elapsed="1.411130"/>
+</kw>
+<msg time="2024-05-09T13:12:48.113597" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.TextView[@text="Custom"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:12:46.702467" elapsed="1.411130"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:48.120117" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Custom"]'.</msg>
+<msg time="2024-05-09T13:12:48.474528" level="INFO">xpath criteria: //android.widget.TextView[@text="Custom"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Custom"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:48.120117" elapsed="0.354411"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.TextView[@text="Custom"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:12:48.113597" elapsed="0.363515"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:49.443716" level="INFO">xpath criteria: //android.widget.Button[@text="MAY 2024"]
+xpath criteria: //android.widget.Button[@text="MAY 2024"]</msg>
+<arg>xpath=//android.widget.Button[@text="MAY 2024"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:12:48.479731" elapsed="0.963985"/>
+</kw>
+<msg time="2024-05-09T13:12:49.443716" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAY 2024"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:12:48.477112" elapsed="0.966604"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:12:49.445843" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="MAY 2024"]'.</msg>
+<msg time="2024-05-09T13:12:49.843006" level="INFO">xpath criteria: //android.widget.Button[@text="MAY 2024"]</msg>
+<arg>xpath=//android.widget.Button[@text="MAY 2024"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:12:49.445299" elapsed="0.397707"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAY 2024"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:12:49.443716" elapsed="0.399290"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:46.702467" elapsed="3.140539"/>
+</test>
+<test id="s1-t9" name="Test number of hits_1" line="68">
+<kw name="Click_Dialog_Button_For_Specific_Number_Of_Times_1">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:01.259720" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:12:49.848967" elapsed="11.410753"/>
+</kw>
+<msg time="2024-05-09T13:13:01.259720" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:12:49.848967" elapsed="11.410753"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:01.259720" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:02.075276" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:01.259720" elapsed="0.815556"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:01.259720" elapsed="0.815556"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-05-09T13:12:49.848967" elapsed="12.226309"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:02.283495" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.075276" elapsed="0.209324"/>
+</kw>
+<msg time="2024-05-09T13:13:02.284600" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.075276" elapsed="0.209324"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:02.285156" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:02.685081" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.285156" elapsed="0.399925"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.285156" elapsed="0.399925"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-05-09T13:13:02.075276" elapsed="0.609805"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:02.955598" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.685081" elapsed="0.273131"/>
+</kw>
+<msg time="2024-05-09T13:13:02.958212" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.685081" elapsed="0.273131"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:02.958212" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:03.205000" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.958212" elapsed="0.246788"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:02.958212" elapsed="0.246788"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-05-09T13:13:02.685081" elapsed="0.519919"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:03.449714" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.205000" elapsed="0.244714"/>
+</kw>
+<msg time="2024-05-09T13:13:03.449714" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.205000" elapsed="0.244714"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:03.449714" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:03.805920" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.449714" elapsed="0.356206"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.449714" elapsed="0.356206"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-05-09T13:13:03.205000" elapsed="0.600920"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:04.045599" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.805920" elapsed="0.242305"/>
+</kw>
+<msg time="2024-05-09T13:13:04.048225" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:03.805920" elapsed="0.242305"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:04.059742" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:04.382099" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.048225" elapsed="0.335042"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.048225" elapsed="0.335042"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-05-09T13:13:03.805920" elapsed="0.577347"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:04.639106" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.383813" elapsed="0.255293"/>
+</kw>
+<msg time="2024-05-09T13:13:04.639106" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.383267" elapsed="0.255839"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:04.651846" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:04.985777" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.639106" elapsed="0.346671"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.639106" elapsed="0.346671"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-05-09T13:13:04.383267" elapsed="0.602510"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:05.255567" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.985777" elapsed="0.269790"/>
+</kw>
+<msg time="2024-05-09T13:13:05.255567" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:04.985777" elapsed="0.269790"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:05.258853" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:05.528639" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.258293" elapsed="0.270346"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.255567" elapsed="0.273072"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2024-05-09T13:13:04.985777" elapsed="0.542862"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:05.800047" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.528639" elapsed="0.271408"/>
+</kw>
+<msg time="2024-05-09T13:13:05.800047" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.528639" elapsed="0.271408"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:05.816567" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:06.184098" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.800047" elapsed="0.384051"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:05.800047" elapsed="0.384051"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2024-05-09T13:13:05.528639" elapsed="0.655459"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:06.454541" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.184098" elapsed="0.270443"/>
+</kw>
+<msg time="2024-05-09T13:13:06.454541" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.184098" elapsed="0.273800"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:06.457898" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:06.800739" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.457898" elapsed="0.342841"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.457898" elapsed="0.342841"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2024-05-09T13:13:06.184098" elapsed="0.616641"/>
+</iter>
+<var>${index}</var>
+<value>${MAX_CLICKS}</value>
+<status status="PASS" start="2024-05-09T13:12:49.847455" elapsed="16.953284"/>
+</for>
+<status status="PASS" start="2024-05-09T13:12:49.847455" elapsed="16.953284"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:12:49.846896" elapsed="16.953843"/>
+</test>
+<test id="s1-t10" name="Select date filter_2" line="80">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:07.056489" level="INFO">xpath criteria: //android.widget.Button[@text="MAR"]</msg>
+<arg>xpath=//android.widget.Button[@text="MAR"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.800739" elapsed="0.255750"/>
+</kw>
+<msg time="2024-05-09T13:13:07.056489" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAR"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:06.800739" elapsed="0.255750"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:07.056489" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="MAR"]'.</msg>
+<kw name="Capture Page Screenshot">
+<msg time="2024-05-09T13:13:22.626035" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" start="2024-05-09T13:13:22.626035" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</status>
+</kw>
+<msg time="2024-05-09T13:13:22.626035" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:13:22.626035" level="INFO">xpath criteria: //android.widget.Button[@text="MAR"]</msg>
+<msg time="2024-05-09T13:13:22.626035" level="FAIL">ValueError: Element locator 'xpath=//android.widget.Button[@text="MAR"]' did not match any elements.</msg>
+<arg>xpath=//android.widget.Button[@text="MAR"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="FAIL" start="2024-05-09T13:13:07.056489" elapsed="15.586618">ValueError: Element locator 'xpath=//android.widget.Button[@text="MAR"]' did not match any elements.</status>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAR"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2024-05-09T13:13:07.056489" elapsed="15.586618">ValueError: Element locator 'xpath=//android.widget.Button[@text="MAR"]' did not match any elements.</status>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="15"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2024-05-09T13:13:22.643640" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="15"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-05-09T13:13:22.643640" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAR 2015"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2024-05-09T13:13:22.643640" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="MAR 2015"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-05-09T13:13:22.643640" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-09T13:13:06.800739" elapsed="15.842901">ValueError: Element locator 'xpath=//android.widget.Button[@text="MAR"]' did not match any elements.</status>
+</test>
+<test id="s1-t11" name="Test number of hits_2" line="96">
+<kw name="Click_Dialog_Button_For_Specific_Number_Of_Times_2">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:23.285682" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="0.642042"/>
+</kw>
+<msg time="2024-05-09T13:13:23.285682" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="0.642042"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:23.285682" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:23.599077" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.285682" elapsed="0.313395"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.285682" elapsed="0.321474"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="0.963516"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:23.855642" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.607156" elapsed="0.248486"/>
+</kw>
+<msg time="2024-05-09T13:13:23.855642" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.607156" elapsed="0.248486"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:23.855642" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:24.117588" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.855642" elapsed="0.261946"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:23.855642" elapsed="0.261946"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-05-09T13:13:23.607156" elapsed="0.510432"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:24.382923" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.117588" elapsed="0.265335"/>
+</kw>
+<msg time="2024-05-09T13:13:24.382923" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.117588" elapsed="0.265335"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:24.398923" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:24.731400" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.395962" elapsed="0.350791"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.382923" elapsed="0.363830"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-05-09T13:13:24.117588" elapsed="0.629165"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:25.002384" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.749075" elapsed="0.258831"/>
+</kw>
+<msg time="2024-05-09T13:13:25.007906" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:24.749075" elapsed="0.258831"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:25.017995" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:25.353531" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.007906" elapsed="0.345625"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.007906" elapsed="0.345625"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-05-09T13:13:24.749075" elapsed="0.604456"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:25.542582" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.353531" elapsed="0.189051"/>
+</kw>
+<msg time="2024-05-09T13:13:25.542582" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.353531" elapsed="0.189051"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:25.542582" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:45.463727" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.542582" elapsed="19.921145"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:25.542582" elapsed="19.921145"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-05-09T13:13:25.353531" elapsed="20.110196"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:45.699628" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.463727" elapsed="0.235901"/>
+</kw>
+<msg time="2024-05-09T13:13:45.699628" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.463727" elapsed="0.235901"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:45.699628" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:45.983721" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.699628" elapsed="0.284093"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.699628" elapsed="0.284093"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-05-09T13:13:45.463727" elapsed="0.519994"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:46.228581" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.983721" elapsed="0.244860"/>
+</kw>
+<msg time="2024-05-09T13:13:46.228581" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:45.983721" elapsed="0.244860"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:46.234644" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:46.536221" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.228581" elapsed="0.307640"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.228581" elapsed="0.307640"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2024-05-09T13:13:45.983721" elapsed="0.552500"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:46.761803" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.536221" elapsed="0.225582"/>
+</kw>
+<msg time="2024-05-09T13:13:46.761803" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.536221" elapsed="0.225582"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:46.763481" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:47.130887" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.763481" elapsed="0.367406"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:46.762897" elapsed="0.367990"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2024-05-09T13:13:46.536221" elapsed="0.594666"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:47.288581" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.131420" elapsed="0.157740"/>
+</kw>
+<msg time="2024-05-09T13:13:47.289160" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<arg>70s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.131420" elapsed="0.157740"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:13:47.296610" level="INFO">Clicking element 'xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-05-09T13:13:47.616497" level="INFO">xpath criteria: //android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</msg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.289160" elapsed="0.327337"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.289160" elapsed="0.327337"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2024-05-09T13:13:47.131420" elapsed="0.485077"/>
+</iter>
+<var>${index}</var>
+<value>${MAX_CLICKS}</value>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="24.972857"/>
+</for>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="24.972857"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:13:22.643640" elapsed="24.975378"/>
+</test>
+<test id="s1-t12" name="Select date filter_3" line="107">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:01.177404" level="INFO">xpath criteria: //android.widget.Button[@text="APR"]</msg>
+<arg>xpath=//android.widget.Button[@text="APR"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.620237" elapsed="13.557167"/>
+</kw>
+<msg time="2024-05-09T13:14:01.177404" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="APR"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:13:47.620237" elapsed="13.557167"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:01.190389" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="APR"]'.</msg>
+<msg time="2024-05-09T13:14:02.091485" level="INFO">xpath criteria: //android.widget.Button[@text="APR"]</msg>
+<arg>xpath=//android.widget.Button[@text="APR"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:14:01.184655" elapsed="0.906830"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="APR"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:14:01.177404" elapsed="0.914081"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:02.513563" level="INFO">xpath criteria: //android.widget.Button[@text="28"]</msg>
+<arg>xpath=//android.widget.Button[@text="28"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:14:02.091485" elapsed="0.422078"/>
+</kw>
+<msg time="2024-05-09T13:14:02.513563" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="28"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:14:02.091485" elapsed="0.422078"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:02.523243" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="28"]'.</msg>
+<msg time="2024-05-09T13:14:03.056671" level="INFO">xpath criteria: //android.widget.Button[@text="28"]</msg>
+<arg>xpath=//android.widget.Button[@text="28"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:14:02.513563" elapsed="0.543108"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="28"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:14:02.513563" elapsed="0.543108"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:03.450061" level="INFO">xpath criteria: //android.widget.Button[@text="Done"]</msg>
+<arg>xpath=//android.widget.Button[@text="Done"]</arg>
+<arg>timeout=70</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-09T13:14:03.056671" elapsed="0.393390"/>
+</kw>
+<msg time="2024-05-09T13:14:03.450061" level="INFO">${check_element} = True</msg>
+<var>${check_element}</var>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.Button[@text="Done"]</arg>
+<arg>timeout=70</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-09T13:14:03.056671" elapsed="0.393390"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-09T13:14:03.450061" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="Done"]'.</msg>
+<msg time="2024-05-09T13:14:03.963725" level="INFO">xpath criteria: //android.widget.Button[@text="Done"]</msg>
+<arg>xpath=//android.widget.Button[@text="Done"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-09T13:14:03.450061" elapsed="0.513664"/>
+</kw>
+<arg>'${check_element}' == 'True'</arg>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.Button[@text="Done"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-09T13:14:03.450061" elapsed="0.513664"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-09T13:14:05.963935" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-09T13:14:03.963725" elapsed="2.000210"/>
+</kw>
+<status status="PASS" start="2024-05-09T13:13:47.619018" elapsed="18.344917"/>
+</test>
+<test id="s1-t13" name="Search the details" line="124">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-05-09T13:15:02.170732" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2173"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.msil.servizapp" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2412]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.msil.servizapp" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2280]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.msil.servizapp" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2280]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.msil.servizapp" class="android.widget.LinearLayout" text="" resource-id="com.msil.servizapp:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2280]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.msil.servizapp" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2280]" displayed="true"&gt;
+            &lt;android.view.ViewGroup index="0" package="com.msil.servizapp" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2280]" displayed="true"&gt;
+              &lt;android.webkit.WebView index="0" package="com.msil.servizapp" class="android.webkit.WebView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2280]" displayed="true"&gt;
+                &lt;android.webkit.WebView index="0" package="com.msil.servizapp" class="android.webkit.WebView" text="ServizApp" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2282]" displayed="true" hint=""&gt;
+                  &lt;android.view.View index="0" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2282]" displayed="true" hint=""&gt;
+                    &lt;android.view.View index="0" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2282]" displayed="true" hint=""&gt;
+                      &lt;android.widget.TextView index="6" package="com.msil.servizapp" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2282]" displayed="true" hint="" /&gt;
+                      &lt;android.view.View index="7" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,107][1080,2282]" displayed="true" hint=""&gt;
+                        &lt;android.app.Dialog index="0" package="com.msil.servizapp" class="android.app.Dialog" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,965][1080,2282]" displayed="true" hint=""&gt;
+                          &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="Activate to adjust the size of the dialog overlaying the screen" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[486,980][594,998]" displayed="true" hint="" /&gt;
+                          &lt;android.view.View index="1" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,965][1080,2282]" displayed="true" hint=""&gt;
+                            &lt;android.view.View index="0" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,995][1020,1106]" displayed="true" hint=""&gt;
+                              &lt;android.view.View index="0" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[180,995][900,1106]" displayed="true" hint=""&gt;
+                                &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="APR 2024" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[180,995][900,1106]" displayed="true" hint="" /&gt;
+                              &lt;/android.view.View&gt;
+                              &lt;android.view.View index="1" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,995][180,1094]" displayed="true" hint=""&gt;
+                                &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,995][180,1094]" displayed="true" hint="" /&gt;
+                              &lt;/android.view.View&gt;
+                              &lt;android.view.View index="2" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[900,995][1020,1094]" displayed="true" hint=""&gt;
+                                &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[900,995][1020,1094]" displayed="true" hint="" /&gt;
+                              &lt;/android.view.View&gt;
+                            &lt;/android.view.View&gt;
+                            &lt;android.view.View index="1" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,1103][1020,1274]" displayed="true" hint=""&gt;
+                              &lt;android.widget.TextView index="0" package="com.msil.servizapp" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,1103][1020,1274]" displayed="true" hint="" /&gt;
+                              &lt;android.view.View index="1" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,1103][1020,1274]" displayed="true" hint=""&gt;
+                                &lt;android.widget.ListView index="0" package="com.msil.servizapp" class="android.widget.ListView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,1121][1020,1256]" displayed="true" hint=""&gt;
+                                  &lt;android.view.View index="0" package="com.msil.servizapp" class="android.view.View" text="Su" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[60,1166][204,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="1" package="com.msil.servizapp" class="android.view.View" text="Mo" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[204,1166][339,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="2" package="com.msil.servizapp" class="android.view.View" text="Tu" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[336,1166][474,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="3" package="com.msil.servizapp" class="android.view.View" text="We" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[471,1166][609,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="4" package="com.msil.servizapp" class="android.view.View" text="Th" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[606,1166][744,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="5" package="com.msil.servizapp" class="android.view.View" text="Fr" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1166][876,1220]" displayed="true" hint="" /&gt;
+                                  &lt;android.view.View index="6" package="com.msil.servizapp" class="android.view.View" text="Sa" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1166][1020,1220]" displayed="true" hint="" /&gt;
+                                &lt;/android.widget.ListView&gt;
+                              &lt;/android.view.View&gt;
+                            &lt;/android.view.View&gt;
+                            &lt;android.widget.Button index="2" package="com.msil.servizapp" class="android.widget.Button" text="31" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[96,1295][207,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="3" package="com.msil.servizapp" class="android.widget.Button" text="1" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[228,1295][339,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="4" package="com.msil.servizapp" class="android.widget.Button" text="2" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[357,1295][468,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="5" package="com.msil.servizapp" class="android.widget.Button" text="3" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[483,1295][594,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="6" package="com.msil.servizapp" class="android.widget.Button" text="4" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[612,1295][723,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="7" package="com.msil.servizapp" class="android.widget.Button" text="5" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1295][852,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="8" package="com.msil.servizapp" class="android.widget.Button" text="6" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1295][984,1406]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="9" package="com.msil.servizapp" class="android.widget.Button" text="7" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[96,1418][207,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="10" package="com.msil.servizapp" class="android.widget.Button" text="8" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[228,1418][339,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="11" package="com.msil.servizapp" class="android.widget.Button" text="9" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[357,1418][468,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="12" package="com.msil.servizapp" class="android.widget.Button" text="10" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[483,1418][594,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="13" package="com.msil.servizapp" class="android.widget.Button" text="11" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[612,1418][723,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="14" package="com.msil.servizapp" class="android.widget.Button" text="12" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1418][852,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="15" package="com.msil.servizapp" class="android.widget.Button" text="13" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1418][984,1529]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="16" package="com.msil.servizapp" class="android.widget.Button" text="14" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[96,1541][207,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="17" package="com.msil.servizapp" class="android.widget.Button" text="15" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[228,1541][339,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="18" package="com.msil.servizapp" class="android.widget.Button" text="16" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[357,1541][468,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="19" package="com.msil.servizapp" class="android.widget.Button" text="17" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[483,1541][594,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="20" package="com.msil.servizapp" class="android.widget.Button" text="18" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[612,1541][723,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="21" package="com.msil.servizapp" class="android.widget.Button" text="19" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1541][852,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="22" package="com.msil.servizapp" class="android.widget.Button" text="20" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1541][984,1652]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="23" package="com.msil.servizapp" class="android.widget.Button" text="21" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[96,1664][207,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="24" package="com.msil.servizapp" class="android.widget.Button" text="22" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[228,1664][339,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="25" package="com.msil.servizapp" class="android.widget.Button" text="23" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[357,1664][468,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="26" package="com.msil.servizapp" class="android.widget.Button" text="24" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[483,1664][594,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="27" package="com.msil.servizapp" class="android.widget.Button" text="25" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[612,1664][723,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="28" package="com.msil.servizapp" class="android.widget.Button" text="26" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1664][852,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="29" package="com.msil.servizapp" class="android.widget.Button" text="27" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1664][984,1775]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="30" package="com.msil.servizapp" class="android.widget.Button" text="28" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[96,1787][207,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="31" package="com.msil.servizapp" class="android.widget.Button" text="29" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[228,1787][339,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="32" package="com.msil.servizapp" class="android.widget.Button" text="30" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[357,1787][468,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="33" package="com.msil.servizapp" class="android.widget.Button" text="1" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[483,1787][594,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="34" package="com.msil.servizapp" class="android.widget.Button" text="2" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[612,1787][723,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="35" package="com.msil.servizapp" class="android.widget.Button" text="3" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[741,1787][852,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.widget.Button index="36" package="com.msil.servizapp" class="android.widget.Button" text="4" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[873,1787][984,1898]" displayed="true" hint="" /&gt;
+                            &lt;android.view.View index="37" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,1994][510,2144]" displayed="true" hint=""&gt;
+                              &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="Cancel" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,1994][510,2144]" displayed="true" hint="" /&gt;
+                            &lt;/android.view.View&gt;
+                            &lt;android.view.View index="38" package="com.msil.servizapp" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="false" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[570,1994][1014,2144]" displayed="true" hint=""&gt;
+                              &lt;android.widget.Button index="0" package="com.msil.servizapp" class="android.widget.Button" text="Done" checkable="false" checked="false" clickable="true" enabled="false" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[570,1994][1014,2144]" displayed="true" hint="" /&gt;
+                            &lt;/android.view.View&gt;
+                          &lt;/android.view.View&gt;
+                        &lt;/android.app.Dialog&gt;
+                      &lt;/android.view.View&gt;
+                    &lt;/android.view.View&gt;
+                  &lt;/android.view.View&gt;
+                &lt;/android.webkit.WebView&gt;
+              &lt;/android.webkit.WebView&gt;
+            &lt;/android.view.ViewGroup&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot">
+<msg time="2024-05-09T13:15:02.182331" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" start="2024-05-09T13:15:02.182331" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</status>
+</kw>
+<msg time="2024-05-09T13:15:02.182331" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:15:02.182331" level="INFO">xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]
+xpath criteria: //android.widget.Button[@text="Search"]</msg>
+<msg time="2024-05-09T13:15:02.182331" level="FAIL">Element locator 'xpath=//android.widget.Button[@text="Search"]' did not match any elements after 50 seconds</msg>
+<arg>xpath=//android.widget.Button[@text="Search"]</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2024-05-09T13:14:05.963935" elapsed="56.234209">Element locator 'xpath=//android.widget.Button[@text="Search"]' did not match any elements after 50 seconds</status>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="Search"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-05-09T13:15:02.198144" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-09T13:14:05.963935" elapsed="56.234209">Element locator 'xpath=//android.widget.Button[@text="Search"]' did not match any elements after 50 seconds</status>
+</test>
+<test id="s1-t14" name="Verify the Job card page" line="128">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot">
+<msg time="2024-05-09T13:15:22.470074" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" start="2024-05-09T13:15:22.470074" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</status>
+</kw>
+<msg time="2024-05-09T13:15:22.473293" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:15:22.474813" level="INFO">xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]
+xpath criteria: //android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]</msg>
+<arg>xpath=//android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2024-05-09T13:15:02.198144" elapsed="20.276669">Execution terminated by signal</status>
+</kw>
+<kw name="Element Should Contain Text" owner="AppiumLibrary">
+<arg>xpath=//android.view.View[@text="JC19020578 icon chip PENDING icon Dealer Details VARUN MOTORS PVT LTD over 4 years ago icon Creation Date 13/12/2019 icon Vehicle Reg No. TS13EP0489 icon Channel Arena icon Service Type No Data Available Individual Claim Status PENDING Parallel Claim Status"]</arg>
+<arg>JC19020578</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-05-09T13:15:22.475983" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-09T13:15:02.198144" elapsed="20.277839">Execution terminated by signal</status>
+</test>
+<test id="s1-t15" name="Job card detail page" line="132">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.475983" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t3" name="Enter Password" line="27">
+<test id="s1-t16" name="Vehicle History page" line="139">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t4" name="Submit Credentials" line="31">
+<test id="s1-t17" name="Use different user" line="152">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t5" name="Handle Login Prompt_1" line="37">
+<test id="s1-t18" name="Launch App Test_1" line="156">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t6" name="Warranty tab" line="50">
+<test id="s1-t19" name="Enter Username_1" line="161">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t7" name="Select warranty type MLG" line="57">
+<test id="s1-t20" name="Enter Password_1" line="166">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t8" name="Select date filter_1" line="61">
+<test id="s1-t21" name="Submit Credentials_1" line="171">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t9" name="Test number of hits_1" line="67">
+<test id="s1-t22" name="Handle Login Prompt_2" line="176">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t10" name="Select date filter_2" line="79">
+<test id="s1-t23" name="Warranty tab_1" line="189">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t11" name="Test number of hits_2" line="87">
+<test id="s1-t24" name="Select warranty type EWR_1" line="196">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t12" name="Select date filter_3" line="98">
+<test id="s1-t25" name="Select date filter_4" line="201">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.479988" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t13" name="Search the details" line="107">
+<test id="s1-t26" name="Test number of hits_4" line="211">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t14" name="Verify the Job card page" line="111">
+<test id="s1-t27" name="Select date filter_5" line="222">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t15" name="Job card detail page" line="115">
+<test id="s1-t28" name="Test number of hits_6" line="236">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.441648" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t16" name="Go back" line="131">
+<test id="s1-t29" name="Select date filter_4" line="247">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t17" name="Select the CCP from JC detail page" line="137">
+<test id="s1-t30" name="Search the details_1" line="262">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t18" name="Search the details for CCP" line="143">
+<test id="s1-t31" name="Job card detail page for EWR" line="266">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.489731" elapsed="0.006037">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t19" name="Job card detail page for CCP" line="148">
+<test id="s1-t32" name="Vehicle History page_1" line="273">
 <tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" start="2024-05-09T13:15:22.495768" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-t20" name="USe deifferent user" line="165">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t21" name="Launch App Test_1" line="168">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t22" name="Enter Username_1" line="174">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t23" name="Enter Password_1" line="180">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t24" name="Submit Credentials_1" line="185">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t25" name="Handle Login Prompt_2" line="191">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.457283" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t26" name="Warranty tab_1" line="203">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t27" name="Select warranty type EWR_1" line="209">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t28" name="Select date filter_4" line="213">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t29" name="Test number of hits_3" line="219">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t30" name="Select date filter_5" line="231">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.463163" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t31" name="Test number of hits_4" line="239">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t32" name="Select date filter_6" line="253">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t33" name="Search the details_1" line="261">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.465582" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t34" name="Job card detail page for EWR" line="265">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-04T21:06:12.466747" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
-</test>
-<status status="FAIL" start="2024-05-04T21:06:11.595567" elapsed="0.871180"/>
+<status status="FAIL" start="2024-05-09T13:12:21.062078" elapsed="181.435066"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="34" skip="0">All Tests</stat>
+<stat pass="11" fail="21" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="11" fail="3" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat pass="0" fail="34" skip="0" id="s1" name="UseCase08 Demonstrate JC Detail page">UseCase08 Demonstrate JC Detail page</stat>
+<stat pass="11" fail="21" skip="0" id="s1" name="UseCase09 Demonstrate Vehicle History">UseCase09 Demonstrate Vehicle History</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-04T21:06:12.441648" level="ERROR">Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\UseCase08_Demonstrate_JC_Detail_page.robot' on line 13: Error in file 'C:\Users\manis\PycharmProjects\pythonProject2\UseCase09_Demonstrate_Vehicle_History.robot' on line 14: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2024-05-09T13:13:22.626035" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:15:02.182331" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:15:22.473293" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2024-05-09T13:15:22.489731" level="WARN">Multiple tests with name 'Select date filter_4' executed in suite 'UseCase09 Demonstrate Vehicle History'.</msg>
 </errors>
 </robot>

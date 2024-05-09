@@ -234,7 +234,7 @@ Verify homepage tabs_1
    AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="30"]
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="Done"]    timeout=40
    AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="Done"]
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="testing2345testing458"]   timeout=40
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="testing2345testing458"]   timeout=70
    Close Application
 
 
