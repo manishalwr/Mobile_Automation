@@ -318,4 +318,5 @@ Verify channel dropdown option_2
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="ARENA"]
    AppiumLibrary.Element Should Be Visible    xpath=//android.view.View[@text="ARENA"]
    AppiumLibrary.Click Element    xpath=//android.view.View[@text="ARENA"]
+   Close Application
 

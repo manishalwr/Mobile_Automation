@@ -64,7 +64,7 @@ Verify Zone dropdown option
 Verify region dropdown option
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.view.View   timeout=70
    AppiumLibrary.Click Element    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.view.View
-   Press Keycode    4
+   #Press Keycode    4
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="EAST 1"]    timeout=70
    AppiumLibrary.Element Should Be Visible    xpath=//android.view.View[@text="EAST 1"]
    AppiumLibrary.Click Element    xpath=//android.view.View[@text="EAST 1"]
@@ -126,7 +126,7 @@ Select workshop code/name
    AppiumLibrary.Click Element    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View/android.view.View/android.view.View
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View/android.view.View/android.view.View/android.widget.EditText   timeout=70
    AppiumLibrary.Click Element    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View/android.view.View/android.view.View/android.widget.EditText
-   AppiumLibrary.Input Text    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View/android.view.View/android.view.View/android.widget.EditText   DEWARS
+   AppiumLibrary.Input Text    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View/android.view.View/android.view.View/android.widget.EditText   0605 - DEWARS GARAGE LTD
    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="0605 - DEWARS GARAGE LTD"]   timeout=70
    AppiumLibrary.Click Element    xpath=//android.view.View[@text="0605 - DEWARS GARAGE LTD"]
    Press Keycode    4

@@ -56,10 +56,7 @@ Select warranty type MLG
    AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="MLG"]
 
 Select date filter_1
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Custom"]   timeout=70
-#   AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="Custom"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAY 2024"]   timeout=70
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAY 2024"]
+
    ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.TextView[@text="Custom"]   timeout=70
        Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.TextView[@text="Custom"]
    ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="MAY 2024"]   timeout=70
@@ -72,18 +69,12 @@ Test number of hits_1
 *** Keywords ***
 Click_Dialog_Button_For_Specific_Number_Of_Times_1
     FOR  ${index}  IN RANGE  ${MAX_CLICKS}
-         ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button    70s
+         ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button    timeout=90
          Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button
     END
 
 *** Test cases ***
 Select date filter_2
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAR"]    timeout=70
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAR"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="15"]   timeout=70
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="15"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAR 2015"]   timeout=70
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAR 2015"]
 
     ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="MAR"]   timeout=70
        Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.Button[@text="MAR"]
@@ -100,17 +91,11 @@ Test number of hits_2
 *** Keywords ***
 Click_Dialog_Button_For_Specific_Number_Of_Times_2
     FOR  ${index}  IN RANGE  ${MAX_CLICKS}
-         ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button    70s
+         ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button    timeout=90
        Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button
     END
 *** Test cases ***
 Select date filter_3
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="APR"]    timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="APR"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="28"]     timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="28"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="Done"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="Done"]
 
    ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="APR"]   timeout=70
       Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.Button[@text="APR"]
@@ -199,10 +184,7 @@ Select warranty type EWR_1
    AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="EWR"]
 
 Select date filter_4
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Custom"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="Custom"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAY 2024"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAY 2024"]
+
     ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.TextView[@text="Custom"]   timeout=70
         Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.TextView[@text="Custom"]
     ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="MAY 2024"]   timeout=70
@@ -215,17 +197,11 @@ Test number of hits_4
 *** Keywords ***
 Click_Dialog_Button_For_Specific_Number_Of_Times_4
     FOR  ${index}  IN RANGE  ${MAX_CLICKS}
-        ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button    70s
+        ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button    timeout=90
          Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button
     END
 *** Test cases ***
 Select date filter_5
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAR"]    timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAR"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="15"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="15"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="MAR 2015"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="MAR 2015"]
       ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="MAR"]   timeout=70
            Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.Button[@text="MAR"]
       ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="1"]   timeout=70
@@ -240,17 +216,11 @@ Test number of hits_6
 *** Keywords ***
 Click_Dialog_Button_For_Specific_Number_Of_Times_6
     FOR  ${index}  IN RANGE  ${MAX_CLICKS}
-       ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button    70s
+       ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button    timeout=90
        Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.app.Dialog/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button
     END
 *** Test cases ***
 Select date filter_7
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="APR"]    timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="APR"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="22"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="22"]
-#   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="Done"]   timeout=50
-#   AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="Done"]
 
        ${check_element}=  Run Keyword and Return Status   AppiumLibrary.Wait Until Page Contains Element    xpath=//android.widget.Button[@text="APR"]   timeout=70
              Run Keyword If      '${check_element}' == 'True'     AppiumLibrary.Click Element  xpath=//android.widget.Button[@text="APR"]
