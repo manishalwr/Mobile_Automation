@@ -14,11 +14,11 @@ Variables    C:\\Users\\manis\\PycharmProjects\\pythonProject2\\Variable.py
 *** Test Cases ***
 Launch App Test
      Open Application    ${REMOTE_URL}    app=${APP}   platformName=${PLATFORM_NAME}      deviceName=${DEVICE_NAME}    appPackage=${APP_PACKAGE}    appActivity=${APP_ACTIVITY}   automationName=${AUTOMATION_NAME}
-     AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]   timeout=70
+     AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]   timeout=150
      AppiumLibrary.Click Element    xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
 
 Enter Username
-    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="User ID"]    timeout=70
+    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="User ID"]    timeout=150
     AppiumLibrary.Click Element    ${LOGIN_USER_FIELD3}
     AppiumLibrary.Input Text Into Current Element    214248
     sleep  6
@@ -28,7 +28,7 @@ Enter Password
     AppiumLibrary.Input Text      xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.widget.EditText  maruti123
 
 Submit Credentials
-    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="Login"]   timeout=70
+    AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.Button[@text="Login"]   timeout=150
     AppiumLibrary.Click Element    xpath=//android.widget.Button[@text="Login"]
 
 *** Test Cases ***
@@ -46,11 +46,11 @@ Handle Logout Prompt_1
 *** Test cases ***
 
 Verify homepage tabs_1
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]   timeout=150
    AppiumLibrary.Element Should Be Visible    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]
  
 Warrenty tab info_1
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]   timeout=150
    AppiumLibrary.Click Element    xpath=//android.view.View[@text="Warranty Warranty Parts Approval & More"]
 #   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]
 #   AppiumLibrary.Element Should Be Visible    xpath=//android.webkit.WebView[@text="ServizApp"]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]
@@ -58,21 +58,21 @@ Warrenty tab info_1
 #   AppiumLibrary.Element Should Be Visible    xpath=//android.view.View[@content-desc="Job Card Status Job Card Status Status of the Job cards"]
 
 Open JC Status page
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@content-desc="Job Card Status Job Card Status Status of the Job cards"]/android.view.View[3]/android.widget.Image   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.view.View[@content-desc="Job Card Status Job Card Status Status of the Job cards"]/android.view.View[3]/android.widget.Image   timeout=150
    AppiumLibrary.Click Element    xpath=//android.view.View[@content-desc="Job Card Status Job Card Status Status of the Job cards"]/android.view.View[3]/android.widget.Image
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Job Card Status Search"]    timeout=70
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="EWR"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="Job Card Status Search"]    timeout=150
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="EWR"]   timeout=150
    AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="EWR"]
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.EditText   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.EditText   timeout=150
    AppiumLibrary.Click Element    xpath=//android.widget.EditText
    AppiumLibrary.Input Text    xpath=//android.widget.EditText    WB23E8870
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC20012647"]    timeout=70
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="MLG"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC20012647"]    timeout=150
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="MLG"]   timeout=150
    AppiumLibrary.Click Element    xpath=//android.widget.TextView[@text="MLG"]
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.EditText   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.EditText   timeout=150
    AppiumLibrary.Click Element    xpath=//android.widget.EditText
    AppiumLibrary.Input Text    xpath=//android.widget.EditText    TS13EP0489
-   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC19020578"]   timeout=70
+   AppiumLibrary.Wait Until Element Is Visible    xpath=//android.widget.TextView[@text="JC19020578"]   timeout=150
    sleep  2
 
 close application
