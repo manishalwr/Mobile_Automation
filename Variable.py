@@ -1,6 +1,7 @@
 REMOTE_URL = 'http://127.0.0.1:4723'
 PLATFORM_NAME ='Android'
-DEVICE_NAME = '2c47c2cc'
+#DEVICE_NAME = '2c47c2cc'
+DEVICE_NAME = '0L02410R200030D8'
 APP_PACKAGE = 'com.msil.servizapp'
 APP_ACTIVITY = 'com.msil.servizapp.MainActivity'
 APP = 'C:\\Users\\manis\\Desktop\\APPIUM\\Maruti-Apk\\app-debug-separate-close-mode-none.apk'

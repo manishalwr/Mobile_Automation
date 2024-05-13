@@ -5,7 +5,7 @@ Library    Process
 Library    AppiumLibrary    run_on_failure=AppiumLibrary.CapturePageScreenshot
 Library    Telnet
 Library    Collections
-Library    SeleniumLibrary
+#Library    SeleniumLibrary
 Library    Dialogs
 
 Variables    C:\\Users\\manis\\PycharmProjects\\pythonProject2\\Variable.py
