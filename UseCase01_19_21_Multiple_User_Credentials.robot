@@ -8,7 +8,8 @@ Library    Collections
 #Library    SeleniumLibrary
 Library    Dialogs
 
-Variables    C:\\Users\\manis\\PycharmProjects\\pythonProject2\\Variable.py
+#Variables    C:\\Users\\manis\\PycharmProjects\\pythonProject2\\Variable.py
+Variables     Variable.py
 
 *** Test Cases ***
 Launch App Test_1
